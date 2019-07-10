@@ -13,19 +13,19 @@
 //   buzz
 
 function fizzBuzz(n) {
-  for (let num = 1; num <=n; num++) {
-    var isDivByThree = num % 3 === 0;
-    var isDivByFive = num % 5 === 0;
-    if (isDivByThree && isDivByFive) {
+
+  for (let i=1; i <= n; i++) {
+    if(i % 5 === 0 && i % 3 === 0) {
       console.log('fizzbuzz')
-    } else if (isDivByThree) {
-      console.log('fizz')
-    } else if (isDivByFive) {
+    } else if (i % 5 === 0) {
       console.log('buzz')
+    } else if (i % 3 === 0) {
+      console.log('fizz')
     } else {
-      console.log(num)
+      console.log(i)
     }
   }
+
 }
 
 

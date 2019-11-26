@@ -17,6 +17,23 @@
 //       '### '
 //       '####'
 
-function steps(n) {}
+function steps(n) {
+  
+}
 
 module.exports = steps;
+
+// // From 0 to n iterate through rows
+// for(let row = 0; row < n; row++) {
+//   // create an emtpy string stair
+//   let stair = '';
+//   // from 0 to n iterate through columns
+//   for(let col = 0; col < n; col++) {
+//     if(col <= row) {
+//       stair += '#';
+//     } else {
+//       stair += ' ';
+//     }
+//   }
+//   console.log(stair)
+// }

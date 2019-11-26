@@ -21,7 +21,6 @@ function chunk(array, size) {
   return unflatten;
 }
 
-
 module.exports = chunk;
 
 // const chunked = [];

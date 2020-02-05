@@ -17,8 +17,29 @@
 //       '### '
 //       '####'
 
-function steps(n) {
-  
+function steps(n, row = 0, stair = '') {
+  // Base case
+  // if row equals n the we have hit the end of our problem
+  if (row === n) {
+    return;
+  }
+  // check if n is equal to stair.length when we hit the end of the row
+  if(n === stair.length) {
+    console.log(stair);
+    //when we hit the end of the row we are increasing row by 1
+    return steps(n, row + 1)
+  }
+
+  // if (stair.length <= row) {
+  //   stair += '#';
+  // } else {
+  //   stair += ' ';
+  // }
+
+// Tinray opirator option
+stair.length <= row ? stair += '#' : stair += ' '
+
+  steps(n, row, stair);
 }
 
 module.exports = steps;
